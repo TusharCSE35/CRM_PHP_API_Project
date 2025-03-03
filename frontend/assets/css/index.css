@@ -1,0 +1,61 @@
+body {
+  background: url('../image/crm_background.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.crm-heading {
+  font-size: 50px;
+  font-weight: bold;
+  position: fixed; 
+  color: black;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 50px; 
+}
+
+.left-content {
+  padding-left: 10%;
+  color: #fff;
+}
+
+.contacts-section {
+  margin-left: 10%; 
+}
+
+.details-section {
+  margin-left: 15%; 
+}
+
+.section {
+  margin-bottom: 25px; 
+}
+
+
+.section-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #053668;
+}
+
+.wide-btn {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.btn-primary { background-color: #007bff; border-color: #007bff; }
+.btn-secondary { background-color: #6c757d; border-color: #6c757d; }
+.btn-success { background-color: #28a745; border-color: #28a745; }
+.btn-dark { background-color: #343a40; border-color: #343a40; }
