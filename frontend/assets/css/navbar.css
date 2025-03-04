@@ -1,22 +1,14 @@
-/* .navbar {
-    background-color: #273974;
-    padding: 1rem 2rem;
-}
-
-.navbar a.navbar-brand,
-.navbar a.nav-link {
-    color: #f5eded !important; 
-}
-
-.navbar a.nav-link:hover {
-    color: #706f6f !important; 
-} */
 
 .navbar{
     background-color: #273974;
     padding: 1rem 2rem;
 }
 
-.navbar a.navbar-brand{
+.navbar a.navbar-brand,
+.navbar a.nav-link{
     color: #f5eded;
+}
+
+.navbar a.nav-link:hover{
+    color: #706f6f !important;
 }
