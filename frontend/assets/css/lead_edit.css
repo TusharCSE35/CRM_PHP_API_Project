@@ -1,0 +1,55 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #007bff; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button.btn-primary, .btn-secondary {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px; 
+    display: inline-block;
+    text-align: center;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-buttons a, .form-buttons button {
+    margin: 0 10px; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    button.btn-primary, .btn-secondary {
+        font-size: 14px;
+        width: 120px; /* Smaller button size for mobile */
+    }
+}
+
+.modal-header{
+    background-color:#007bff;
+    color: white;
+}

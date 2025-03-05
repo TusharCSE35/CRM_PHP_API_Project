@@ -6,7 +6,7 @@ body{
 h1 {
     text-align: center;
     margin-bottom: 40px;
-    color: #007bff; /* Bootstrap Primary Color */
+    color: #007bff; 
     text-transform: uppercase;
     font-weight: bold;
 }

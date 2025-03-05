@@ -1,43 +1,50 @@
-document.addEventListener("DOMContentLoaded", function () {
-    fetchLeads();
-});
 
-function fetchLeads() {
-    fetch("../api/leads/get_all.php")
+document.addEventListener('DOMContentLoaded', function(){
+    fetchLeads();
+
+    function fetchLeads(){
+        fetch(`http://localhost:8000/backend/api/lead/lead_display.php`)
         .then(response => response.json())
         .then(data => {
-            let tableBody = document.getElementById("leadTableBody");
-            tableBody.innerHTML = "";
-            
-            data.forEach(lead => {
-                let row = `<tr>
+            // console.log(data);
+            const leadList = document.getElementById('leadDisplay');
+            leadList.innerHTML = '';
+
+            data.forEach(lead =>{
+                const row = document.createElement('tr');
+                row.innerHTML = `
                     <td>${lead.id}</td>
                     <td>${lead.name}</td>
                     <td>${lead.address}</td>
-                    <td><a href="${lead.website}" target="_blank">${lead.website}</a></td>
+                    <td>${lead.website}</td>
                     <td>
-                        <button class="btn btn-warning btn-sm" onclick="editLead(${lead.id})">Edit</button>
+                        <a href="lead_edit.html?id=${lead.id}" class="btn btn-warning btn-sm">Edit</a>
                         <button class="btn btn-danger btn-sm" onclick="deleteLead(${lead.id})">Delete</button>
                     </td>
-                </tr>`;
-                tableBody.innerHTML += row;
+                `;
+                leadList.appendChild(row);
             });
         })
-        .catch(error => console.error("Error fetching leads:", error));
-}
+        .catch(error => {
+            console.error('Error fetching leads:', error);
+            alert('Error fetching leads data.');
+        });
+    }
 
-function deleteLead(id) {
-    if (confirm("Are you sure you want to delete this lead?")) {
-        fetch(`../api/leads/delete.php?id=${id}`, { method: "DELETE" })
+    window.deleteLead = function(id){
+        if(confirm('Are you sure want to delete this leads?')){
+            fetch(`http://localhost:8000/backend/api/lead/lead_delete.php?id=${id}`,{
+                method: 'DELETE'
+            })
             .then(response => response.json())
-            .then(result => {
-                alert(result.message);
+            .then(data => {
+                alert(data.message);
                 fetchLeads();
             })
-            .catch(error => console.error("Error deleting lead:", error));
+            .catch(error => {
+                console.error('Error deleting leads:', error);
+                alert('Error deleting leads.')
+            });
+        }
     }
-}
-
-function editLead(id) {
-    window.location.href = `lead_edit.html?id=${id}`;
-}
+});
