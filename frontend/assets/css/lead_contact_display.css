@@ -1,8 +1,9 @@
 /* General container styling */
-body{
+body {
     font-family: 'Arial', sans-serif;
     background-color: white;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,10 +30,19 @@ h1 {
     color: white;
 }
 
-.table th, .table td {
-    padding: 12px;
+.table th,
+.table td {
+    padding: 15px; /* Increase padding to make cells wider */
     text-align: left;
     vertical-align: middle;
+    border: 1px solid #ddd; /* Add border to make it clearer */
+}
+
+/* Remove rowspan on contact rows to allow them to sit below the lead information */
+.table td[rowspan] {
+    vertical-align: middle;
+    text-align: center;
+    background-color: #e9ecef;
 }
 
 /* Table row styles */
@@ -57,15 +67,10 @@ h1 {
     display: block;
 }
 
-/* Styling for the lead information column */
-.table td[rowspan] {
-    vertical-align: middle;
-    background-color: #e9ecef;
-}
-
 /* Responsive design */
 @media (max-width: 767px) {
-    .table th, .table td {
+    .table th,
+    .table td {
         padding: 8px;
         font-size: 0.875rem;
     }
@@ -78,5 +83,9 @@ h1 {
 @media (max-width: 991px) {
     .container {
         padding: 0 15px;
+    }
+
+    .table {
+        width: 100%;
     }
 }
