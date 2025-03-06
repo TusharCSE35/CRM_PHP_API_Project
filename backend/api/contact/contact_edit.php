@@ -1,9 +1,5 @@
 <?php
-    header("Access-Control-Allow-Origin: *");
-    header("Content-Type: application/json");
-    header("Access-Control-Allow-Methods: PUT");
-    header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-
+    require_once __DIR__ . '/../../include/headers.php';
     require_once __DIR__ . '/../../classes/crm.php';
 
     $data = json_decode(file_get_contents("php://input"));

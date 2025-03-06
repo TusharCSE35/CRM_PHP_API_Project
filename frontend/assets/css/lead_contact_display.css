@@ -1,28 +1,28 @@
-/* Body */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
     text-align: center;
+    margin-bottom: 40px;
+    color: #007bff; 
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .table-responsive {
     margin-top: 20px;
 }
 
-/* Table Styling */
+
 table.table {
     width: 100%;
     border-collapse: collapse;
 }
 
 .table th {
-    background-color: #273974;
     color: white;
     text-align: center;
 }
@@ -54,7 +54,6 @@ table.table {
     font-style: italic;
 }
 
-/* Responsive for smaller screens */
 @media (max-width: 768px) {
     h1 {
         font-size: 1.5rem;
