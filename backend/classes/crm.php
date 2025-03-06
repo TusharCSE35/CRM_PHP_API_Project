@@ -11,7 +11,7 @@ class CRM {
         $this->contact = new Contact();
     }
     
-    // ** Lead Methods ** 
+    // Lead Methods  
     public function addLead($name, $address, $website) {
         return $this->lead->addLead($name, $address, $website);
     }
@@ -37,7 +37,7 @@ class CRM {
     }
 
 
-    // ** Contact Methods ** 
+    // Contact Methods 
     public function addContact($lead_id, $name, $email, $address) {
         return $this->contact->addContact($lead_id, $name, $email, $address);
     }

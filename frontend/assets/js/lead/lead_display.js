@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function(){
         fetch(`http://localhost:8000/backend/api/lead/lead_display.php`)
         .then(response => response.json())
         .then(data => {
-            // console.log(data);
             const leadList = document.getElementById('leadDisplay');
             leadList.innerHTML = '';
 

@@ -8,7 +8,6 @@
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $data = json_decode(file_get_contents("php://input"));
-        // echo $data;
     
         if (!empty($data->lead_id) && !empty($data->name) && !empty($data->email) && !empty($data->address)) {
             $crm = new CRM();

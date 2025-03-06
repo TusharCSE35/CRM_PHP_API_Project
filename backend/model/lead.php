@@ -68,7 +68,6 @@ class Lead {
         
         return $leads; 
     }
-    
 
     public function deleteLead($id){
         $query = "DELETE FROM ". $this->table. " WHERE id = :id";

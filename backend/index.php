@@ -33,20 +33,22 @@ CRM_API_Project/
 │   │   │   ├─ lead_edit.php
 │   │   │   └─ lead_search.php
 │   │   └─ contact/
-│   │       ├─ contact_add.php
-│   │       ├─ contact_delete.php
-│   │       ├─ contact_display.php
-│   │       ├─ contact_edit.php
-│   │       └─ contact_search.php
+│   │   |   ├─ contact_add.php
+│   │   |   ├─ contact_delete.php
+│   │   |   ├─ contact_display.php
+│   │   |   ├─ contact_edit.php
+│   │   |   └─ contact_search.php
 │   │   └─ lead_contact_display.php
-│
-├─ config/
-│   └─ database.php
-│
-├─ models/
-│   ├─ lead.php
-│   └─ contact.php
-│
-├─ classes/
-│   └─ crm.php 
+│   |
+|   ├─ config/
+│   |   └─ database.php
+│   |
+|   ├─ model/
+│   |   ├─ lead.php
+│   |   └─ contact.php
+│   |
+|   ├─ classes/
+│   |    └─ crm.php 
+|   |
+|   └─ index.php
  -->

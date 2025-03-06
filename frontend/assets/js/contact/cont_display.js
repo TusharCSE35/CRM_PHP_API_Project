@@ -1,4 +1,4 @@
-// Fetch the contact data from the API and display it in the table
+
 document.addEventListener("DOMContentLoaded", function() {
     const contactDisplayElement = document.getElementById("contactDisplay");
     fetchContacts();

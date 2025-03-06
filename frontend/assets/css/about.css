@@ -36,13 +36,27 @@ body {
 }
 
 .feature-box {
-    background: #007bff;
-    color: white;
+    background-color: #09998d; 
     padding: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 10px;
     text-align: center;
-    border-radius: 8px;
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    gap: 15px; 
+    justify-content: center; 
+}
+
+.feature-box:nth-child(3n) {
+    margin-right: 0;
 }
 
 .form-custom {
@@ -61,4 +75,3 @@ body {
 .btn-primary:hover {
     background: #0056b3;
 }
-

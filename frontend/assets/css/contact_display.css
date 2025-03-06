@@ -45,7 +45,7 @@ td {
 }
 
 .btn-update {
-    background-color: #28a745; /* Green */
+    background-color: #28a745; 
     color: white;
 }
 
@@ -54,7 +54,7 @@ td {
 }
 
 .btn-delete {
-    background-color: #dc3545; /* Red */
+    background-color: #dc3545; 
     color: white;
 }
 

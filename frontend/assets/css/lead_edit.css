@@ -45,7 +45,7 @@ button.btn-primary, .btn-secondary {
 
     button.btn-primary, .btn-secondary {
         font-size: 14px;
-        width: 120px; /* Smaller button size for mobile */
+        width: 120px;
     }
 }
 
