@@ -13,30 +13,30 @@ h1 {
 
 .table {
     width: 100%;
-    table-layout: fixed; /* Equal width for all columns */
-    border-collapse: collapse; /* Border properly adjust hobe */
+    table-layout: fixed; 
+    border-collapse: collapse; 
 }
 
 .table th,
 .table td {
     padding: 15px;
     text-align: center;
-    vertical-align: middle; /* Text sob somoy middle e thakbe */
+    vertical-align: middle; 
     border: 1px solid #ddd;
-    word-wrap: break-word; /* Long text wrap hobe */
+    word-wrap: break-word;
     white-space: normal; 
 }
 
 .table th {
     text-align: center;
-    width: 20%; /* Fixed width */
+    width: 20%; 
 }
 
 .table td[rowspan] {
     background-color: #e9ecef;
-    text-align: left; /* Lead Information Left e thakbe */
-    width: 30%; /* Lead column width fixed */
-    vertical-align: top; /* Lead always top theke start hobe */
+    text-align: left; 
+    width: 30%; 
+    vertical-align: top; 
 }
 
 .table tbody tr:hover {
@@ -51,7 +51,7 @@ h1 {
 }
 
 .table-responsive {
-    overflow-x: auto; /* Mobile responsive */
+    overflow-x: auto; 
 }
 
 @media (max-width: 767px) {
